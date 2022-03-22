@@ -21,7 +21,7 @@ There are no right or wrong answers. We are deliberately offering creative freed
 - Fork or download this repository.
 - [KISS](https://en.wikipedia.org/wiki/KISS_principle).
 - Install the terraform CLI: [Instructions](https://learn.hashicorp.com/tutorials/terraform/install-cli)
-- Use the terraform CLI to test your changes using `terraform plan` 
+- Use the terraform CLI to test your changes using `terraform plan`
 - (Optional) You can use the [AWS Free Tier](https://aws.amazon.com/free) to create the resources in this exercise if you wish. Make sure you remain within the free tier limits so that you are not charged. _Foreground is not responsible for any charges you may incur doing this exercise_.
 - Complete the following steps in your fork and open a pull request.
 
@@ -50,11 +50,8 @@ There are no right or wrong answers. We are deliberately offering creative freed
 ### Requirements
 - The S3 bucket is setup with the relevant properties and permissions.
 - Create an IAM role for the EC2 instance created in the previous step.
-- Assign the role to the EC2 instance and ensure that role has permissions to read and write (only) to that s3 bucket
+- Assign an instance role to that instance and assure that role has permissions to read and write (only) to that s3 bucket.
 
 ## STEP 4: Optional / Bonus
-- Hook all this up to a Terraform Cloud account.
-- Show a working example.
+- Show a working example by hooking all this up to a [Terraform Cloud account](https://app.terraform.io/signup/account) and a [Amazon Web Services account](https://aws.amazon.com/free). Both providers have free tiers.
 - Consider scenarios where we may wish to deploy this infrastructure across different environments (i.e. stage, test, production) and what approach you might take to enable this.
-
-
