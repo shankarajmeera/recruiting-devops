@@ -12,6 +12,8 @@ Here at [Foreground](https://foreground.co), we prefer to understand a candidate
 * Be as thorough as you wish.
 * All exercises are to be performed as if you were on the job.
 * We use [terraform](https://www.terraform.io/) to manage our cloud infrastructure on AWS. Provide your exercise files as valid terraform code.
+* We'd expect to see the specific resources defined in the `terraform/development/devops-recruiting-exercise` directory and any shared modules in `terraform/modules` directory, but we are open to other approaches if you can justify your reasoning.
+* You are free to use whatever development enviroment you wish. We use [Visual Studio Code](https://code.visualstudio.com/) with the official Hashicorp Terraform extension to help with formatting.
 * You may submit your response by forking this repository and opening a pull request. You can then send that link to the pull request to the recruiter you are working with.
 
 There are no right or wrong answers. We are deliberately offering creative freedom and interpretation to all candidates who are completing this exercise. You would receive similar tasks on the job and would be given similar latitude with how you approach the problem and deliver business insights.
