@@ -21,10 +21,11 @@ There are no right or wrong answers. We are deliberately offering creative freed
 ## Instructions
 - Use this repository to kickstart your project.
 - Fork or download this repository.
-- [KISS](https://en.wikipedia.org/wiki/KISS_principle).
+- [KISS](https://en.wikipedia.org/wiki/KISS_principle), but do not sacrifice security.
 - Install the terraform CLI: [Instructions](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 - Use the terraform CLI to test your changes using `terraform plan`
 - (Optional) You can use the [AWS Free Tier](https://aws.amazon.com/free) to create the resources in this exercise if you wish. Make sure you remain within the free tier limits so that you are not charged. _Foreground is not responsible for any charges you may incur doing this exercise_.
+- (Optional) You can use the [Terraform Cloud](https://app.terraform.io/app/) to create the pipeline and connection to AWS if you wish. Make sure you remain within the free tier limits so that you are not charged. _Foreground is not responsible for any charges you may incur doing this exercise_.
 - Complete the following steps in your fork and open a pull request.
 
 ## STEP 1: VPC and Networking
@@ -43,7 +44,10 @@ There are no right or wrong answers. We are deliberately offering creative freed
 
 ### Requirements
 - Use the previously created VPC outputs as inputs to the EC2 resource.
-- Launch the default Amazon Linux 2 AMI for whatever region we set up.
+- Launch the default Amazon Linux 2 AMI for whatever region you set up in the previous step.
+- Add a security group to this instance that allows the following and denys anything else:
+  - Allow ports 80 and 443 from the world
+  - Allow port 22 from only 1.1.1.1 and 8.8.8.8 
 
 ## STEP 3: S3 setup
 
