@@ -199,7 +199,6 @@ resource "aws_instance" "webserver1" {
   subnet_id              = aws_subnet.web-subnet-1.id
   user_data              = file("install_apache.sh")
   associate_public_ip_address = true
-  //iam_instance_profile = [aws_iam_instance_profile.ec2_profile.name]
   iam_instance_profile = aws_iam_instance_profile.ec2_profile.arn
 
   tags = {
